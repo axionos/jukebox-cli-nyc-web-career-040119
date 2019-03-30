@@ -36,7 +36,7 @@ end
 def play (songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
-  number = input.to_i-1
+  number = input.to_i - 1
 
 end
 
