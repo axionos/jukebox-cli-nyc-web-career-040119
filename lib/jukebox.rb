@@ -40,7 +40,7 @@ def play (songs)
 
   if number >= 0 && songs[number]
     puts "Playing #{songs[number]}"
-  elsif songs.include?(input)
+  elsif number < 0 && songs.include?(input)
     puts "Playing #{songs[number]}"
   else
     puts "Invalid input, please try again"
