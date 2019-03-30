@@ -40,7 +40,7 @@ def play (songs)
 
   if number >= 0  # track number
     puts "Playing #{songs[number]}"
-  elsif number < 0 && songs.include?(input) # song name
+  elsif songs.include?(input) # song name
     index = songs.index(input)
     puts "Playing #{songs[number]}"
   else
