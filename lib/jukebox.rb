@@ -27,12 +27,6 @@ def help
 - exit : exits this program"
 end
 
-def list (songs)
-  songs.each_with_index do |song, idx|
-    puts "#{idx+1}. #{song[idx]}"
-  end
-end
-
 def play (songs)
   puts "Please enter a song name or number:"
   song_requested = gets.chomp
@@ -43,6 +37,12 @@ def play (songs)
     puts "Invalid input, please try again."
   end
 
+end
+
+def list (songs)
+  songs.each_with_index do |song, idx|
+    puts "#{idx+1}. #{song[idx]}"
+  end
 end
 
 def exit_jukebox
