@@ -56,4 +56,10 @@ def run (songs)
   help
   puts "Please enter a command:"
   input = gets.chomp
+
+  if input == "list"
+    list
+  else input == "play"
+    play (songs)
+  end
 end
