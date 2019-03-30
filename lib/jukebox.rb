@@ -41,6 +41,7 @@ def play (songs)
   if number >= 0 && songs[number]
     puts "Playing #{songs[number]}"
   elsif number < 0 && songs.include?(input)
+    index = songs.index(input)
     puts "Playing #{songs[number]}"
   else
     puts "Invalid input, please try again"
