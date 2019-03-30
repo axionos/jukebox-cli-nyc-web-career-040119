@@ -38,9 +38,9 @@ def play (songs)
   input = gets.chomp
   number = input.to_i - 1
 
-  if number >= 0 && songs[number]
+  if number >= 0 && songs[number] # track number
     puts "Playing #{songs[number]}"
-  elsif number < 0 && songs.include?(input)
+  elsif number < 0 && songs.include?(input) # song name
     index = songs.index(input)
     puts "Playing #{songs[number]}"
   else
