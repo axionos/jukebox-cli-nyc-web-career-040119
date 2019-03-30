@@ -43,7 +43,6 @@ def play (songs)
   elsif songs.include?(input) # song name
     index = songs.index(input)
     puts "Playing #{songs[index]}"
-    puts "Playing #{songs[number]}"
   else
     puts "Invalid input, please try again"
   end
