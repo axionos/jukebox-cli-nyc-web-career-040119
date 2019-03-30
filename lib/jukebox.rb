@@ -34,13 +34,15 @@ def list (songs)
 end
 
 def play (songs)
-  if condition
+  puts "Please enter a song name or number:"
+  song_requested = gets.chomp
+
+  if songs.include?("song_requested")
 
   else
 
   end
-  puts "Please enter a song name or number:"
-  song_requested = gets.chomp
+
 end
 
 def exit_jukebox
