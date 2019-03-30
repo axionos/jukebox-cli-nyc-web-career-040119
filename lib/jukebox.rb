@@ -38,6 +38,10 @@ def play (songs)
   input = gets.chomp
   number = input.to_i - 1
 
+  if songs.include?(number)
+    puts "Playing #{songs[0]}"
+  end
+
 end
 
 
