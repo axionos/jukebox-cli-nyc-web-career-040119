@@ -38,9 +38,9 @@ def play (songs)
   song_requested = gets.chomp
 
   if songs.include?("song_requested")
-
+    puts "Playing <#{song_requested}>"
   else
-
+    puts "Invalid input, please try again."
   end
 
 end
