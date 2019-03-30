@@ -28,7 +28,9 @@ def help
 end
 
 def list (songs)
+  songs.each_with_index do |song, idx|
 
+  end
 end
 
 def play (songs)
