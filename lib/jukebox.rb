@@ -38,10 +38,11 @@ def play (songs)
   input = gets.chomp
   number = input.to_i - 1
 
-  if songs.include?(number)
-    puts "Playing #{songs[0]}"
+  if number >= 0 && songs[number]
+    puts "Playing #{songs[number]}"
+  else
+    puts "Invalid input, please try again"  
   end
-
 end
 
 
