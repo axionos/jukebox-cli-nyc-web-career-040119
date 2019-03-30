@@ -53,5 +53,6 @@ def exit_jukebox
 end
 
 def run
-
+  help
+  "Please enter a command:"
 end
